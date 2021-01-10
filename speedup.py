@@ -1,5 +1,5 @@
 '''
-Script to plot speedup of gpu vs. jit acceleration
+Script to plot speedup of gpu vs. jumba acceleration
 '''
 
 import matplotlib.pyplot as plt
@@ -14,6 +14,6 @@ plt.scatter(N, speedup, marker='x', color='black', zorder=2)
 plt.plot(N, speedup, color='lime', zorder=1)
 plt.xlabel('N')
 plt.ylabel('speedup')
-plt.title('cuda vs. jit speedup')
+plt.title('cuda vs. numba speedup')
 f.savefig("speedup.pdf", bbox_inches='tight')
 plt.show()
