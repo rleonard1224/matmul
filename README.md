@@ -1,6 +1,6 @@
 # matmul
 
-* Matrix multiplication algorithms accelerated with jit and cuda
+Matrix multiplication algorithms accelerated with jit and cuda
 
 * `matmulnumba.py` - numba accelerated matrix multiplication
 
