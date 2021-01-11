@@ -41,10 +41,5 @@ kernel = cuda_kernels.matmul_cuda()
 start = time.time()
 kernel((blockx,blocky), (threadx,), (A, B, C, m, n, p))
 end = time.time()
-# Bring matrix sum back to cpu
-C = cp.asnumpy(C)
 # Print timing
 print("Time = {}".format(end - start))
-
-
-
