@@ -35,15 +35,16 @@ C = cp.zeros((A.shape[0],B.shape[1]),cp.double)
 m = A.shape[0]; n = A.shape[1]; p = B.shape[1]
 # Allocate gpu grid
 blockx = 1024; blocky = 1024
-threadx = 1024; thready = 1
+threadx = 1024
 kernel = cuda_kernels.matmul_cuda()
 # Call and time the cuda kernel
 start = time.time()
-kernel((blockx,blocky), (threadx,thready), (A, B, C, m, n, p))
+kernel((blockx,blocky), (threadx,), (A, B, C, m, n, p))
 end = time.time()
 # Bring matrix sum back to cpu
 C = cp.asnumpy(C)
 # Print timing
 print("Time = {}".format(end - start))
+
 
 
