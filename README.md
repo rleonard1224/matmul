@@ -8,9 +8,11 @@
 
 ## Dockerfile
 
-In order to setup the Dockerfile, execute the following steps:
+In order build the Docker image, execute the commands:
   * `export MATMUL_ROOT=<path-to-matmul-repo>`
   * `cd <path-to-matmul-repo>`
-  * `chmod 777 run.sh`
   * `docker build --tag matmul:matmul .`
 
+To launch the Docker container, execute the commands: 
+ * `chmod 777 run.sh`
+ * `./run.sh`
