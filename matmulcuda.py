@@ -16,7 +16,7 @@ class cuda_kernels():
             __global__ void matmul(const double *A, const double *B, double *C, int m, int n, int p) 
             {
                 int bid = gridDim.y*blockIdx.x + blockIdx.y;
-                int tid = blockDim.y*threadIdx.x + threadIdx.y;
+                int tid = threadIdx.x;
                 int nelements = m*p;
                 if ((bid < nelements) && (tid < n))
                 {
