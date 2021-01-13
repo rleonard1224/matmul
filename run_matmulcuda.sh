@@ -1,0 +1,1 @@
+blender --background --python matmulcuda.py
