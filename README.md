@@ -9,6 +9,6 @@
 ## Dockerfile
 
 In order to setup and run the Dockerfile, execute the following steps:
-  * export MATMUL_ROOT=<path-to-matmul-repo>
+  * <export MATMUL_ROOT=path-to-matmul-repo>
 
 
