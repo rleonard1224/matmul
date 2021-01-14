@@ -1,5 +1,5 @@
 '''
-Script to plot speedup of gpu vs. jumba acceleration
+Script to plot speedup of gpu vs. numba acceleration
 '''
 
 import matplotlib.pyplot as plt
