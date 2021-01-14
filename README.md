@@ -23,5 +23,5 @@ To run matmulcuda.py while inside the Docker container execute the command:
   * `./run_matmulcuda.py`
   
 To run matmulnumba.py while inside the Docker container execute the command:
-  * `./runmatmulnumba.py`
+  * `./run_matmulnumba.py`
 
